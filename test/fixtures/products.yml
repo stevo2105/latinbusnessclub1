@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyText
+  live: false
+  end_date: 2015-11-07 14:24:54
+  max_entries: 1
+  min_max: 1
+
+two:
+  name: MyText
+  live: false
+  end_date: 2015-11-07 14:24:54
+  max_entries: 1
+  min_max: 1

@@ -1,0 +1,267 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="Genesis">
+  <meta name="author" content="">
+  <link rel="icon" href="img/title.png">
+
+  <title>GENESIS</title>
+
+  <!-- FONTS -->
+  <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,800,300'
+        rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="/assets/bootstrap.css"/>
+  <link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/assets/component.css"/>
+  <link rel="stylesheet" href="/assets/animations.css"/>
+  <link rel="stylesheet" href="/assets/components.css"/>
+  <link rel="stylesheet" href="/assets/responsiveslides.css"/>
+  <link rel="stylesheet" href="/assets/fotorama.css"/>
+  <link rel="stylesheet" href="/assets/owl.carousel.css"/>
+  <link rel="stylesheet" href="/assets/jquery-ui.css"/>
+
+  <link rel="stylesheet" href="/assets/main.css"/>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+	
+  
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <script>
+    document.createElement( 'video' );
+  </script>
+  <![endif]-->
+
+</head>
+
+<body class="gradient_bg">
+
+<!--background & preloader-->
+<div class="wrapp">
+
+    <div class="preload-bg">
+        <div class="preloaderWraper">
+            <span id="loadPrecent">0%</span>
+
+            <div class="scaleDiv">
+                <object type="image/svg+xml" data="/assets/triangles.svg" class="genesisPreloader loading opacity"
+                        width="300"
+                        height="300">
+                </object>
+                <div class="black-overlay"></div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<!-- MAIN FIXED BOTTOM MENU -->
+<nav class="navbar navbar-fixed-bottom ">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#home">
+      <span>Genesis</span>
+    </a>
+  </div>
+  <div id="navbar">
+    <div class="center-menu" id='all-pages'>
+      <ul class="nav navbar-nav dl-menu">
+        <li class='open-page-2'><a href="#about">About Us</a></li>
+        <li class='open-page-3'><a href="#services">Services</a></li>
+        <li class='open-page-4'><a href="#contacts">Contacts</a></li>
+        <li class='open-page-5'><a href="#team">Team</a></li>
+        <li class='open-page-6'><a href="#portfolio">Portfolio</a></li>
+        <li class='open-page-7'><a href="#app">About App</a></li>
+      </ul>
+    </div>
+    <div class="navbar_share-icons">
+      <div class="navbar_icons">
+        <ul>
+          <li><a href="https://www.facebook.com/ItemBridge"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://plus.google.com/+Itembridge/"><i class="fa fa-google-plus"></i></a></li>
+          <li><a href="https://twitter.com/Itembridge"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://www.behance.net/itembridge"><i class="fa fa-behance"></i></a></li>
+          <li><a href="https://dribbble.com/itembridge"><i class="fa fa-dribbble"></i></a></li>
+        </ul>
+      </div>
+      <span>itembridge llc, 2015</span>
+      <a href="" class="navbar_show-icons">
+        <!--<i class="fa fa-share-alt"></i>-->
+      </a>
+    </div>
+  </div>
+  <!--/.nav-collapse -->
+</nav>
+<!-- END MAIN MENU -->
+
+<main>
+
+    <div id="pt-main" class="pt-perspective ">
+
+        <!-- MAIN PAGE -->
+        <div class="pt-page pt-page-1 show-timer" id="main">
+            <!-- DAYS LEFT -->
+             <div class="main_block contacts">
+                <header>
+                    <h1>Yippeee!</h1>
+                </header>
+                <div class="container">
+                    <div class="row">
+
+                        <div class="main_block_text col-md-6 col-md-push-3 col-sm-10 col-sm-push-1">
+							<p>
+							
+								<b>Email: <%=@p.email%> </b>
+							<br>
+								<b>Max Price: $<%='%.2f' % @p.offer%></b>
+							
+							</p>
+
+                            	<p>
+                                    We have received your entry and
+                                    the email above will be contacted when the time ends for more info.
+                                </p>
+							
+							
+                           
+
+                        </div>
+                        <!--end main-block-text-->
+
+                    </div>
+                    <!--end row-->
+                </div>
+                <!--end container-->
+            </div>
+        </div>
+        <!-- END MAIN PAGE -->
+
+   
+
+       
+
+    </div>
+
+</main>
+
+<!-- Google map API -->
+<div class="map">
+    <div id="map-canvas"></div>
+    <div class="bottom">
+        <a href="#" class="close-this"></a>
+    </div>
+</div>
+
+<!-- INFORMATION ABOUT APP -->
+<div class="info-about-app">
+
+    <div class="info-about-app_block">
+
+        <div class="stack ">
+
+            <div class="stack-content">
+
+                <ul id="elasticstack" class="stack__images">
+                    <li><img src="img/app-1.png" alt="07" width="250" height="508"/></li>
+                    <li><img src="img/app-2.png" alt="02" width="250" height="508"/></li>
+                    <li><img src="img/app-3.png" alt="01" width="250" height="508"/></li>
+                </ul>
+                <ul id="stack-titles" class="stack__titles">
+                    <li class="current">
+                        <header>
+                            <h1 class="main-heading">ABOUT APP</h1>
+                        </header>
+                        <p>
+                            Enjoy intuitive features of our digital devices. Portability, connectivity, user interface,
+                            storage, performance, security and applications capability – all these makes daily life much
+                            easier and more effective.
+                        </p>
+                    </li>
+                    <li class="">
+                        <h1 class="main-heading">Features</h1>
+                        <p>
+                            Truly awesome mobile APP for your smartphone. Our designers and developers made a piece of
+                            art for you to enjoy your phone functioning. Portability, connectivity, user interface,
+                            storage, performance, security and app capability – all these will make your daily life much
+                            easier and more effective.
+                        </p>
+                    </li>
+                    <li class="">
+                        <h1 class="main-heading">download</h1>
+                        <p>
+                            App download is easier than ever! You'll get not just an app, but also free software,
+                            easy search, personal assistant, image editors and filters and regular updates. Don't miss
+                            a chance, download it right now.
+                        </p>
+                        <a class="app-store">
+                            <i class="fa fa-apple"></i>
+                            <span>Download on the</span>
+                            App Store
+                        </a>
+                        <a class="google-play">
+                            <i class="fa google-play-bg"></i>
+                            <span>Get it now</span>
+                            Google play
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="bottom">
+        <div class="center-menu">
+            <ul class="nav navbar-nav center-menu">
+                <li class="active"><a href="#">About APP</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Download</a></li>
+            </ul>
+        </div>
+        <a href="#" class="close-this"></a>
+    </div>
+</div>
+	
+
+
+<script src="/assets/jquery-1.11.2.min.js"></script>
+<script src="/assets/modernizr.custom.js"></script>
+<script src="/assets/polyfill.js"></script>
+<script src="/assets/draggabilly.pkgd.min.js"></script>
+<script src="/assets/elastiStack.js"></script>
+<script src="/assets/precentLoader.js"></script>
+<script src="/assets/scrollStyler.js"></script>
+<script src="/assets/jquery-ui.min.js"></script>
+<script src="/assets/jquery.dlmenu.js"></script>
+<script src="/assets/fotorama.js"></script>
+<script src="/assets/owl.carousel.js"></script>
+<script src="/assets/responsiveslides.js"></script>
+<script src="/assets/retina.js"></script>
+<script src="/assets/jquery-mousewheel.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+<script src="/assets/main.js"></script>
+<noscript>
+  <h1 class="no-script">We're sorry but our site <strong>requires</strong> JavaScript.</h1>
+</noscript>
+
+</body>
+</html>
